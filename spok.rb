@@ -11,7 +11,7 @@ class Spok < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/devlup-labs/spok/releases/download/0.1.0/spok_0.1.0_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "1ed27fffa345f9445bc5de3902b50dd8294c9758de6c6ef2ba42f2008c02e05a"
+      sha256 "16e24cb1cc52fe6d1611be7c385a1609743f71855c603a4bf379473afa63b04b"
 
       def install
         bin.install "bin/spok"
@@ -21,7 +21,7 @@ class Spok < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/devlup-labs/spok/releases/download/0.1.0/spok_0.1.0_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "35dc0b653f1f091cf2aae20e81630e5dc8873dcfe22c2fb080de6023bf5c9766"
+      sha256 "c406567a441d86e73a73921eed570ea860898ac3a272537620dea8d8c667b6f2"
 
       def install
         bin.install "bin/spok"
@@ -34,7 +34,7 @@ class Spok < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/devlup-labs/spok/releases/download/0.1.0/spok_0.1.0_linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "7772099773eebdc2d828cbfb3ef7b21bb7f630cc740a83a741779107bbc91723"
+      sha256 "6671ea88e2459bb05c8df766b3154e680ee55889deeb2c8a654cb365ff67b8f1"
 
       def install
         bin.install "bin/spok"
@@ -44,7 +44,7 @@ class Spok < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/devlup-labs/spok/releases/download/0.1.0/spok_0.1.0_linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "461cb6862683f211052d754777da60659831dd7770806e4e9e7fe8501db84c4b"
+      sha256 "a95e193c3684d9149415482c7ddde750a438413a4e88c858d57912e331decc90"
 
       def install
         bin.install "bin/spok"
