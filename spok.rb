@@ -5,13 +5,13 @@
 class Spok < Formula
   desc "Sans Password or Key (SPoK) - An easier way for remote server authentication."
   homepage "https://github.com/devlup-labs/spok"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/devlup-labs/spok/releases/download/0.1.0/spok_0.1.0_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "35e30ecc3f36ad7e47da9eb0c6caf95209480918709fd0b0e8f1399dc8caf114"
+      url "https://github.com/devlup-labs/spok/releases/download/0.1.1/spok_0.1.1_darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "f2a0818c0d285e3df6a7f8a33aca447030f14f15bf7c5f161acee5af551775ec"
 
       def install
         bin.install "bin/spok"
@@ -20,8 +20,8 @@ class Spok < Formula
       end
     end
     on_arm do
-      url "https://github.com/devlup-labs/spok/releases/download/0.1.0/spok_0.1.0_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "fe41dd7361ca493a68e99e3b419ee9fd64f01da11d14f6771eabbb75c9b7b77a"
+      url "https://github.com/devlup-labs/spok/releases/download/0.1.1/spok_0.1.1_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "d11361ab89c43fa47e857a23f07316b20c2962d65ccc3681635dca04b96f9364"
 
       def install
         bin.install "bin/spok"
@@ -34,8 +34,8 @@ class Spok < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/devlup-labs/spok/releases/download/0.1.0/spok_0.1.0_linux_amd64.tar.gz", using: CurlDownloadStrategy
-        sha256 "afdfb44ceae4a672cacf615a887f72b18c1f17348e356ca5d9fd392e643c45ec"
+        url "https://github.com/devlup-labs/spok/releases/download/0.1.1/spok_0.1.1_linux_amd64.tar.gz", using: CurlDownloadStrategy
+        sha256 "66c7d8a0c620d33283e4bbcd27de1989a77f50f53be6e8847cbcecb7c69e2d72"
 
         def install
           bin.install "bin/spok"
@@ -46,8 +46,8 @@ class Spok < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/devlup-labs/spok/releases/download/0.1.0/spok_0.1.0_linux_arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "5fbb8e129c2972f7338d4c868ce45754f72e972cac3ef9f27e5d876bc329733d"
+        url "https://github.com/devlup-labs/spok/releases/download/0.1.1/spok_0.1.1_linux_arm64.tar.gz", using: CurlDownloadStrategy
+        sha256 "253a2ed6b753220c839ccf5e93c3bea7bf328c67c1ce45e0d5646986c49996cd"
 
         def install
           bin.install "bin/spok"
